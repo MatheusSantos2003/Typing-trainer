@@ -1,0 +1,63 @@
+.random-text {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.random-text p {
+  margin: 0;
+}
+
+.random-text button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #444;
+  border: none;
+  border-radius: 3px;
+}
+
+.typing-area {
+  margin-top: 10px;
+}
+
+.highlighted-text {
+  color: transparent; /* Prevent seeing original text */
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  z-index: 1;
+  pointer-events: none; /* Prevent interaction */
+}
+
+.highlighted-text span.correct {
+  color: green;
+}
+
+.highlighted-text span.incorrect {
+  color: red;
+}
+
+textarea.notepad {
+  width: 100%;
+  height: 300px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: gray;
+  color: white;
+  outline: none;
+  border: none;
+  z-index: 2;
+  position: relative;
+  caret-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}

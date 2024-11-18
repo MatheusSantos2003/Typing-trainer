@@ -1,0 +1,19 @@
+<div class="random-text">
+  <p>{{ randomText }}</p>
+  <button (click)="generateRandomText()">Generate New Text</button>
+</div>
+
+<div class="typing-area">
+  <div class="highlighted-text">
+    <span *ngFor="let char of highlightedText">
+      <span [ngClass]="char.class">{{ char.char }}</span>
+    </span>
+  </div>
+  <textarea
+    class="notepad"
+    [(ngModel)]="userInput"
+    (input)="checkTyping()"
+    spellcheck="false"
+    placeholder="Start typing here..."
+  ></textarea>
+</div>
